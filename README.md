@@ -27,7 +27,7 @@ for further investigation.
 ## Tools
  * `axf2firmware` replicates its proprietary counterpart.
  * `firmware2elf` reconstructs an ELF file.
- * `firmwareinfo`
+ * `fwinfo`
 
 ## File format
 Firmware files begin with a header.
@@ -118,6 +118,13 @@ I only had very few samples of app firmware available. They all seem to be compr
 
 "Table 18: System Address Memory Map" in the data sheet might be helpful to further contextualize the data.
 
+## Examples
+    
+    $ bin/fwinfo samples/hello_world.bin
+
+	$ bin/firmware2elf samples/hello_world.bin /tmp/out.elf
+
+	$ readelf -a /tmp/out.elf
 
 ## Appendix
 ### Authors

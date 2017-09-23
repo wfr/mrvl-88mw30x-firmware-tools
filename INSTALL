@@ -1,0 +1,4 @@
+Dependencies:
+
+ * GCC
+ * libelf -- https://directory.fsf.org/wiki/Libelf
